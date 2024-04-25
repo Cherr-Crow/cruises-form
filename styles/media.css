@@ -1,0 +1,116 @@
+@media (max-width: 1260px) {
+    .wrapper .sidebar {
+        position: fixed;
+    }
+}
+
+@media (max-width: 1044px) {
+
+    .header-top {
+        padding-left: 50px;
+    }
+
+    .header-top {
+        background-position: 50px 3px;
+    }
+
+    .container-wrapper,
+    .header-bottom {
+        padding-left: 66px;
+    }
+
+    .wrapper .sidebar-close {
+        display: block;
+    }
+
+    .sidebar-close {
+        background: var(--primary);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 52px;
+        height: 100%;
+        padding: 20px 0;
+        transition: all 0.5s ease;
+    }
+
+    .sidebar-second {
+        margin: 0 auto;
+    }
+
+    .sidebar-second__button {
+        padding-top: 10px;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .sidebar-second__button span {
+        background-image: url(../images/Arrow-close-icon.svg);
+        margin-right: 0;
+        padding: 0;
+    }
+
+    .sidebar-second__button {
+        margin: 0 auto;
+        margin-bottom: 10px;
+        padding: 0;
+        padding-bottom: 10px;
+
+        border-bottom: 1px solid #1A459C;
+        max-width: 31px;
+    }
+
+    .sidebar-close .sidebar-icon {
+        position: static;
+        width: 34px;
+        height: 32px;
+        max-width: 34px;
+        margin: 0 auto;
+        background-image: url(../images/menu-items-min.svg);
+        border-radius: 4px;
+    }
+
+
+}
+
+@media (max-width: 950px) {
+
+    .payment-mini {
+        display: block;
+    }
+
+    .refund-rate {
+        display: block;
+        width: 100%;
+    }
+
+    .refund-table {
+        max-width: 100%;
+    }
+
+    .payment {
+        display: none;
+    }
+
+    .info {
+        margin: 0;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .header .header-descr {
+        display: none;
+    }
+
+    .tabs-content__block {
+        justify-content: space-between;
+    }
+
+    .tourist-data {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
