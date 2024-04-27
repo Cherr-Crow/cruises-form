@@ -31,7 +31,8 @@
                         <div class="sidebar-second__list">
                             <div class="sidebar-second__item">
                                 <div class="sidebar-second__item-button">Работа с туром</div>
-                                <div class="sidebar-second__item-button sidebar-second__item-button--active">Оформление договора</div>
+                                <div class="sidebar-second__item-button sidebar-second__item-button--active">Оформление
+                                    договора</div>
                             </div>
                         </div>
                     </div>
@@ -126,24 +127,40 @@
                                 (Круизы&Путешествия). Вам необходимо:</div>
 
                             <div class="tabs-content__list">
-                                <div class="tabs-content__item"> <div>1.</div> <div>Ознакомиться с текстом договора, который вы видите
-                                    перед собой в данном подразделе
-                                    «Заключить договор».</div> </div>
-                                <div class="tabs-content__item"><div> 2.</div> <div> В конце подраздела нажать на кнопку <span>«ПЕРЕЙТИ В
-                                    ПРОФИЛЬ КЛИЕНТА»</span> для заполнения
-                                персональных данных в подразделе «Профиль клиента» — в этом случае договор
-                                заполнится автоматически.
-                                Для вашего удобства все данные в вашем подразделе «Профиль клиента» будут сохранены
-                                в дальнейшем для ускоренного оформления ваших будущих заказа.</div></div>
-                                <div class="tabs-content__item"><div>3.</div> <div>Согласиться с условиями предложенного договора
-                                    методом клика в чек-боксе.</div>  </div>
-                                <div class="tabs-content__item"><div>4.</div> <div>Если раздел «Профиль клиента» у вас уже был заполнен
-                                    ранее (вы являетесь постоянным
-                                    клиентом компании) — вам необходимо проверить ваши данные и подтвердить командой
-                                    «Данные подтверждаю и даю согласие на заключение договора».</div>  </div>
-                                <div class="tabs-content__item"><div> 5.</div> <div>Переподтверждать персональные данные необходимо
-                                    каждый раз при заключении договора
-                                    по новым заказам.</div> </div>
+                                <div class="tabs-content__item">
+                                    <div>1.</div>
+                                    <div>Ознакомиться с текстом договора, который вы видите
+                                        перед собой в данном подразделе
+                                        «Заключить договор».</div>
+                                </div>
+                                <div class="tabs-content__item">
+                                    <div> 2.</div>
+                                    <div> В конце подраздела нажать на кнопку <span>«ПЕРЕЙТИ В
+                                            ПРОФИЛЬ КЛИЕНТА»</span> для заполнения
+                                        персональных данных в подразделе «Профиль клиента» — в этом случае договор
+                                        заполнится автоматически.
+                                        Для вашего удобства все данные в вашем подразделе «Профиль клиента» будут
+                                        сохранены
+                                        в дальнейшем для ускоренного оформления ваших будущих заказа.</div>
+                                </div>
+                                <div class="tabs-content__item">
+                                    <div>3.</div>
+                                    <div>Согласиться с условиями предложенного договора
+                                        методом клика в чек-боксе.</div>
+                                </div>
+                                <div class="tabs-content__item">
+                                    <div>4.</div>
+                                    <div>Если раздел «Профиль клиента» у вас уже был заполнен
+                                        ранее (вы являетесь постоянным
+                                        клиентом компании) — вам необходимо проверить ваши данные и подтвердить командой
+                                        «Данные подтверждаю и даю согласие на заключение договора».</div>
+                                </div>
+                                <div class="tabs-content__item">
+                                    <div> 5.</div>
+                                    <div>Переподтверждать персональные данные необходимо
+                                        каждый раз при заключении договора
+                                        по новым заказам.</div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -185,14 +202,22 @@
                                             <label class="form-container__label" for="">
                                                 <div>Дата рождения <span>*</span></div>
 
-                                                <input placeholder="Дата рождения" type="date" name="" id="">
+                                                <input class="input-date" placeholder="Дата рождения" type="date"
+                                                    name="" id="">
                                             </label>
-                                            <label class="form-container__label" for="">
+                                            <label class="form-container__label" for="select">
                                                 <div>Гражданство <span>*</span></div>
 
-                                                <select aria-placeholder="Гражданство" name="" id="">
-                                                    <option value="">l</option>
-                                                    <option value="">j</option>
+                                                <select aria-placeholder="Гражданство" name="" id="select">
+                                                    <option value="Выберите из списка">Выберите из списка</option>
+                                                    <option value="Российская Федерация">Российская Федерация</option>
+                                                    <option value="Лонгйирбюэн">Лонгйирбюэн</option>
+                                                    <option value="Азербайджан">Азербайджан</option>
+                                                    <option value="Армения">Армения</option>
+                                                    <option value="Белоруссия">Белоруссия</option>
+                                                    <option value="Антигуа и Барбуда">Антигуа и Барбуда</option>
+                                                    <option value="Латвия">Латвия</option>
+                                                    <option value="Литва">Литва</option>
                                                 </select>
                                             </label>
 
@@ -250,7 +275,7 @@
 
                                     <div class="form-container">
                                         <div class="form-container__title">Адрес регистрации</div>
-                          
+
                                         <div class="form-container__block form-address">
                                             <label class="form-container__label" for="">
                                                 <div>Почтовый индекc<span>*</span></div>
@@ -280,13 +305,19 @@
                                     </div>
 
                                     <div class="form-container">
-                                        
+
                                         <div class="form-container__title">Адрес фактического проживания</div>
-                                        <label class="form-checkbox">
-                                            <input type="checkbox" value="yes">
-                                            Совпадает с адресом регистрации
-                                        </label>
-                                        <div>
+
+                                        <div class="form-border">
+
+                                            <div class="checkbox">
+                                                <input class="custom-checkbox" id="custom-checkbox" type="checkbox"
+                                                value="yes">               
+
+                                            <label class="form-checkbox" for="custom-checkbox"> Совпадает с адресом
+                                                регистрации</label>
+                                            </div>
+                                
 
                                             <div class="form-container__block form-address">
                                                 <label class="form-container__label" for="">
@@ -320,10 +351,12 @@
 
                                     <div class="form__block">
                                         <div class="form__descr"><span>*</span>Поля обязательны для заполнения</div>
-                                        <div class="form__descr"><span>**</span>Если вы проживаете в доме без номера квартиры — поставьте в графе "0" (ноль)</div>
+                                        <div class="form__descr"><span>**</span>Если вы проживаете в доме без номера
+                                            квартиры — поставьте в графе "0" (ноль)</div>
                                     </div>
 
-                                    <button class="form__button">Данные подтверждаю и даю согласие на заключение нового договора</button>
+                                    <button class="form__button">Данные подтверждаю и даю согласие на заключение нового
+                                        договора</button>
                                 </form>
                             </div>
                         </div>

@@ -558,12 +558,18 @@ body {
     margin-bottom: 14px;
 }
 
-.form-container__block {
+.form-container__block,
+.form-border {
     padding-top: 16px;
     display: flex;
     flex-wrap: wrap;
 
     border-top: 1px solid #CECECE;
+}
+
+.form-container__block:last-child {
+    padding-top: 0;
+    border-top: none;
 }
 
 .form-container__title {
@@ -590,6 +596,27 @@ body {
     width: 200px;
 }
 
+.form-container__label select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url(../images/arrow-select.svg);
+    background-repeat: no-repeat;
+    background-position: 174px 16px;
+}
+
+ select option {
+    display: block;
+    font-weight: 500;
+    color: #0A2239;
+    padding: 8px 10px;
+    background-color: transparent;
+    border: 0;
+    padding-right: 15px;
+    height: 31px;
+    width: 187px;
+  }
+
 .form-container__label input {
     all: unset;
     max-width: 200px;
@@ -598,7 +625,6 @@ body {
     border-radius: 3px;
 
     font-size: 13px;
-    color: #999999;
 }
 
 .form-container__label div span {
@@ -693,4 +719,48 @@ body {
 
 .form-address .form-container__label:nth-child(6) input {
     max-width: 90px;
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+.custom-checkbox {
+    display: none;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.custom-checkbox + label {
+    position: relative;
+    padding-left: 20px;
+    height: 14px;
+    display: flex;
+    align-items: center;
+    color: #0A2239;
+    cursor: pointer;
+    user-select: none;
+}
+
+.custom-checkbox + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 14px;
+    height: 14px;
+    border: 1.5px solid #0A2239;
+    border-radius: 2px;
+}
+
+.custom-checkbox:checked + label::before {
+    border-color: #0A2239;
+    background-image: url(../images/checked.svg);
+    background-repeat: no-repeat;
+    background-position:  center center;
 }
