@@ -567,6 +567,18 @@ body {
     border-top: 1px solid #CECECE;
 }
 
+ .form-column {
+    flex-direction: column;
+}
+
+.form-container__title span {
+    font-weight: 400;
+}
+
+.form-block {
+    display: block;
+}
+
 .form-container__block:last-child {
     padding-top: 0;
     border-top: none;
@@ -587,7 +599,6 @@ body {
 
 .form-container__label div {
     font-size: 12px;
-    margin-bottom: 4px;
     color: #555;
 }
 
@@ -605,7 +616,7 @@ body {
     background-position: 174px 16px;
 }
 
- select option {
+select option {
     display: block;
     font-weight: 500;
     color: #0A2239;
@@ -615,13 +626,13 @@ body {
     padding-right: 15px;
     height: 31px;
     width: 187px;
-  }
+}
 
 .form-container__label input {
     all: unset;
     max-width: 200px;
-    padding: 12px 16px;
-    border: 1px solid #999999;
+    padding: 11px 16px;
+    border: 1px solid #CFD3D5;
     border-radius: 3px;
 
     font-size: 13px;
@@ -736,7 +747,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     align-items: center;
 }
 
-.custom-checkbox + label {
+.custom-checkbox+label {
     position: relative;
     padding-left: 20px;
     height: 14px;
@@ -747,7 +758,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     user-select: none;
 }
 
-.custom-checkbox + label:before {
+.custom-checkbox+label:before {
     content: '';
     position: absolute;
     left: 0;
@@ -758,9 +769,109 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     border-radius: 2px;
 }
 
-.custom-checkbox:checked + label::before {
+.custom-checkbox:checked+label::before {
     border-color: #0A2239;
     background-image: url(../images/checked.svg);
     background-repeat: no-repeat;
-    background-position:  center center;
+    background-position: center center;
+}
+
+/* dropdown */
+
+.form-dropdown {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-block {
+    position: absolute;
+    display: none;
+}
+
+.form-dropdown__btn div:first-child {
+    margin-bottom: 4px;
+    color: #555555;
+    font-size: 12px;
+}
+
+.form-dropdown__btn div span {
+    color: #FF4F4F;
+}
+
+.form-dropdown__btn div:nth-child(2) {
+    width: 200px;
+    padding: 12px 16px;
+    border: 1px solid #CFD3D5;
+    border-radius: 3px;
+    background-image: url(../images/arrow-select.svg);
+    background-repeat: no-repeat;
+    background-position: 174px 17px;
+}
+
+.dropdown-block {
+    position: relative;
+    max-width: 200px;
+    width: 100%;
+}
+
+.form-container__label .dropdown-block__top {
+    all: unset;
+    margin-bottom: 0;
+    padding: 8px;
+    background-color: #E3EFFF;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.dropdown-block__top div {
+    padding: 16px 12px;
+    border: 1px solid #E3EFFF;
+    background-color: #FFFFFF;
+    border-radius: 3px;
+}
+
+.form-container__label div {
+    margin-bottom: 4px;
+}
+
+.dropdown-block__list {
+    max-height: 200px;
+    overflow-y: scroll;
+    /* прокрутка по вертикали */
+}
+
+.dropdown-block__item {
+    padding: 10px 8px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #0A2239;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.dropdown-block__item:hover {
+    color: #fff;
+    background-color: #0F7EE6;
+}
+
+
+.dropdown-block__list::-webkit-scrollbar {
+    width: 8px;
+    /* Ширина всего элемента навигации */
+    margin-left: auto;
+}
+
+.dropdown-block__list::-webkit-scrollbar-track {
+    background: #D6EBFF;
+    /* Цвет дорожки */
+}
+
+.dropdown-block__list::-webkit-scrollbar-thumb {
+    background-color: #0F7EE6;
+    /* Цвет бегунка */
+    border-radius: 20px;
+    /* Округление бегунка */
+    border: 5px solid #0F7EE6;
+    /* Оформление границ бегунка */
 }

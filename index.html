@@ -205,28 +205,39 @@
                                                 <input class="input-date" placeholder="Дата рождения" type="date"
                                                     name="" id="">
                                             </label>
-                                            <label class="form-container__label" for="select">
-                                                <div>Гражданство <span>*</span></div>
 
-                                                <select aria-placeholder="Гражданство" name="" id="select">
-                                                    <option value="Выберите из списка">Выберите из списка</option>
-                                                    <option value="Российская Федерация">Российская Федерация</option>
-                                                    <option value="Лонгйирбюэн">Лонгйирбюэн</option>
-                                                    <option value="Азербайджан">Азербайджан</option>
-                                                    <option value="Армения">Армения</option>
-                                                    <option value="Белоруссия">Белоруссия</option>
-                                                    <option value="Антигуа и Барбуда">Антигуа и Барбуда</option>
-                                                    <option value="Латвия">Латвия</option>
-                                                    <option value="Литва">Литва</option>
-                                                </select>
-                                            </label>
+                                            <div class="form-container__label form-dropdown">
+                                                <div class="form-dropdown__btn">
+                                                  <div>Гражданство <span>*</span></div> 
+                                                  <div>Выберите из списка</div>
+                                                </div>
+
+                                                <div class="dropdown-block">
+                                                     <div class="dropdown-block__top">
+                                                        <div>Турция</div>                                                       
+                                                    </div>
+
+                                                     <div class="dropdown-block__list">
+                                                        <div class="dropdown-block__item">Российская Федерация</div>
+                                                        <div class="dropdown-block__item">Лонгйирбюэн</div>
+                                                        <div class="dropdown-block__item">Азербайджан</div>
+                                                        <div class="dropdown-block__item">Армения</div>
+                                                        <div class="dropdown-block__item">Белоруссия</div>
+                                                        <div class="dropdown-block__item">Антигуа и Барбуда</div>
+                                                        <div class="dropdown-block__item">Латвия</div>
+                                                        <div class="dropdown-block__item">Литва</div>
+                                                    </div>
+                                                </div>
+
+                                    
+                                            </div>
 
                                         </div>
                                     </div>
 
                                     <div class="form-container">
-                                        <div class="form-container__title">Общегражданский паспорт (заполняется как
-                                            указанно в паспорте)</div>
+                                        <div class="form-container__title">Общегражданский паспорт (<span>заполняется как
+                                            указанно в паспорте</span>)</div>
                                         <div class="form-container__block form-passport">
                                             <label class="form-container__label" for="">
                                                 <div>Серия <span> *</span></div>
@@ -308,16 +319,17 @@
 
                                         <div class="form-container__title">Адрес фактического проживания</div>
 
-                                        <div class="form-border">
+                                        <div class="form-border form-column">
 
-                                            <div class="checkbox">
-                                                <input class="custom-checkbox" id="custom-checkbox" type="checkbox"
-                                                value="yes">               
-
-                                            <label class="form-checkbox" for="custom-checkbox"> Совпадает с адресом
-                                                регистрации</label>
-                                            </div>
-                                
+                                            <div class="form-block">
+                                                <div class="checkbox">
+                                                    <input class="custom-checkbox" id="custom-checkbox" type="checkbox"
+                                                    value="yes">               
+    
+                                                <label class="form-checkbox" for="custom-checkbox"> Совпадает с адресом
+                                                    регистрации</label>
+                                                </div>
+                                            </div>                                                
 
                                             <div class="form-container__block form-address">
                                                 <label class="form-container__label" for="">
