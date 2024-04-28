@@ -875,3 +875,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     border: 5px solid #0F7EE6;
     /* Оформление границ бегунка */
 }
+
+.form-container__label input::-webkit-input-placeholder {color:#999999;}
+.form-container__label input::-moz-placeholder {color:#999999;}
+.form-container__label input:-moz-placeholder {color:#999999;}
+.form-container__label input:-ms-input-placeholder {color:#999999;}
+
+input[type=date] {
+    color: #999999;
+}
