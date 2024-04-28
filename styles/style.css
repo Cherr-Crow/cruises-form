@@ -142,7 +142,7 @@ body {
 .sidebar-first__link {
     display: block;
     margin: 0 auto;
-    margin-bottom: 21px;
+    margin-bottom: 25px;
 }
 
 .sidebar-first__button {
@@ -173,7 +173,7 @@ body {
     align-items: center;
     margin-bottom: 12px;
     padding: 6px;
-    ;
+    padding-left: 0;
     padding-bottom: 0;
     text-align: left;
     width: 100%;
